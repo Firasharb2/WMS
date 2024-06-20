@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@{
+    if (Session["userId"] == null)
+    {
+        Response.Redirect("~/Access/login");
+    }
+}
+<!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
@@ -14,7 +20,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Added ones -->
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-  
+
 </head>
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">

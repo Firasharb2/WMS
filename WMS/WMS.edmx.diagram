@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a082402ae55d4341b94bce1230e3f32f" Name="Diagram1">
+        <EntityTypeShape EntityType="WMSdbModel.Category" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSdbModel.Rank" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSdbModel.Reward" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSdbModel.Role" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSdbModel.Spot" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSdbModel.SystemUser" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSdbModel.User" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSdbModel.WasteRecord" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="WMSdbModel.FK_WasteRecords_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="WMSdbModel.FK_Users_Ranks" ManuallyRouted="false" />
+        <AssociationConnector Association="WMSdbModel.FK_SystemUsers_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="WMSdbModel.FK_WasteRecords_Spots" ManuallyRouted="false" />
+        <AssociationConnector Association="WMSdbModel.FK_WasteRecords_SystemUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="WMSdbModel.FK_WasteRecords_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

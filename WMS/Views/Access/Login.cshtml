@@ -1,0 +1,35 @@
+﻿@model SystemUser
+
+@{
+    Layout = null;
+    ViewBag.Title = "Login";
+}
+
+<link href="~/Content/Login.css" rel="stylesheet" />
+
+
+@using (Html.BeginForm("login", "Access", FormMethod.Post))
+{
+    <div class="login">
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+        <h1>LOGIN</h1>
+
+        <label for="name">Username</label>
+        <input id="name" name="name" type="text" />
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+
+        @if (TempData["Message"] != null)
+        {
+            <div class="LoginFailed">
+                @TempData["Message"].ToString()
+            </div>
+        }
+
+    </div>
+}
+
